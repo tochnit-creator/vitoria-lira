@@ -156,27 +156,12 @@ section {
 
 /* === MOLDURA DOURADA === */
 .frame {
-  position: absolute;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 1.5s ease 0.5s;
-}
-
-section.visible .frame {
-  opacity: 1;
+  display: none;
 }
 
 .frame-corner {
-  position: absolute;
-  width: 60px;
-  height: 60px;
+  display: none;
 }
-
-.frame-corner.tl { top: 30px; left: 30px; border-top: 1px solid var(--gold); border-left: 1px solid var(--gold); }
-.frame-corner.tr { top: 30px; right: 30px; border-top: 1px solid var(--gold); border-right: 1px solid var(--gold); }
-.frame-corner.bl { bottom: 30px; left: 30px; border-bottom: 1px solid var(--gold); border-left: 1px solid var(--gold); }
-.frame-corner.br { bottom: 30px; right: 30px; border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold); }
 
 /* === ANIMAÇÕES BASE === */
 .fade-up {
@@ -816,11 +801,7 @@ section.visible .timeline::before { transform: scaleY(1); }
   .side-nav { right: 14px; }
   .brand-mark { top: 18px; left: 18px; font-size: 8px; letter-spacing: 3px; }
   .chapter-num { top: 30px; right: 30px; font-size: 11px; }
-  .frame-corner { width: 35px; height: 35px; }
-  .frame-corner.tl, .frame-corner.tr { top: 15px; }
-  .frame-corner.bl, .frame-corner.br { bottom: 15px; }
-  .frame-corner.tl, .frame-corner.bl { left: 15px; }
-  .frame-corner.tr, .frame-corner.br { right: 15px; }
+  .frame-corner { display: none; }
   
   .cover .eyebrow { font-size: 9px; letter-spacing: 4px; margin-bottom: 24px; }
   .cover h1 { font-size: 56px; }
